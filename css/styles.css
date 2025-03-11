@@ -13,17 +13,23 @@ body {
     height: 100vh;
 }
 
+/* ---------- HEADER ---------- */
+
 .header {
     grid-area: header;
     height: 70px;
     background-color: royalblue;
 }
 
+/* ---------- SIDEBAR ---------- */
+
 #sidebar {
     grid-area: sidebar;
     height: 100%;
     background-color: grey;
 }
+
+/* ---------- MAIN ---------- */
 
 .main-container {
     grid-area: main;
