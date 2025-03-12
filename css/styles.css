@@ -59,10 +59,20 @@ body {
     margin-bottom: 30px;
 }
 
+.sidebar-title > span {
+    display: none;
+}
+
 .sidebar-brand {
     margin-top: 15px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.sidebar-list {
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
 }
 
 /* ---------- MAIN ---------- */
