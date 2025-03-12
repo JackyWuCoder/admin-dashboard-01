@@ -32,22 +32,35 @@ var barChartOptions = {
       show: false
     }
   },
+  colors: [
+    "#246dec",
+    "#cc3c43",
+    "#367852",
+    "#f5b74f",
+    "#4f35a1"
+  ],
   plotOptions: {
     bar: {
+      distributed: true,
       borderRadius: 4,
       borderRadiusApplication: 'end',
-      horizontal: true,
+      horizontal: false,
+      columnWidth: '40%',
     }
   },
   dataLabels: {
     enabled: false
   },
+  legend: {
+    show: false
+  },
   xaxis: {
-    categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-    'United States', 'China', 'Germany'
-    ],
+    categories: ["Laptop", "Phone", "Monitor", "Headphones", "Camera"],
+  },
+  yaxis: {
+    title: "Count"
   }
 };
 
-var chart = new ApexCharts(document.querySelector("#chart"), barChartOptions);
-chart.render();
+var barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartOptions);
+barChart.render();
